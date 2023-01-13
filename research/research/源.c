@@ -9,7 +9,7 @@ int main()
 	int left = 0;
 	int right = size - 1;
 	int mid = (left + right) / 2;
-	while (left != right)
+	while (left<=right)
 	{
 		if (arr[mid] == n)
 		{
@@ -25,6 +25,10 @@ int main()
 			left = mid;
 			mid = (left + right) / 2;
 		}
+	}
+	if (left>right)
+	{
+		printf("can't found.");
 	}
 	return 0;
 }
